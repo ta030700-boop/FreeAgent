@@ -1,5 +1,6 @@
 import json
 import os
+import sqlite3
 from pathlib import Path
 import sys
 import tempfile
@@ -56,6 +57,19 @@ class LocalToolTests(unittest.TestCase):
         self.assertEqual(other.call("memory_get", {})["notes"][0]["value"], "Python")
         other.call("task_update", {"id": task["id"], "status": "done"})
         self.assertEqual(other.call("task_list", {})["tasks"][0]["status"], "done")
+
+    def test_database_commits_rolls_back_and_releases_handles(self):
+        with self.tools.database() as saved:
+            saved.execute("INSERT INTO memory VALUES (?,?)", ("committed", "yes"))
+        with self.assertRaises(sqlite3.ProgrammingError):
+            saved.execute("SELECT 1")
+        with self.assertRaisesRegex(RuntimeError, "abort"):
+            with self.tools.database() as aborted:
+                aborted.execute("INSERT INTO memory VALUES (?,?)", ("aborted", "no"))
+                raise RuntimeError("abort")
+        with self.assertRaises(sqlite3.ProgrammingError):
+            aborted.execute("SELECT 1")
+        self.assertEqual(self.tools.call("memory_get", {})["notes"], [{"key": "committed", "value": "yes"}])
 
     def test_python_output_exit_and_timeout(self):
         r = self.tools.call("run_python", {"code": "print('works')"})
