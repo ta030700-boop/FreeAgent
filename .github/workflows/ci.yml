@@ -36,6 +36,8 @@ jobs:
         run: node extension/test-parser.js
       - name: Provider document reading
         run: node extension/test-chatgpt.js
+      - name: Chat provider selection
+        run: node extension/test-popup.js
       - name: Worker permissions and routing
         run: node extension/test-worker.js
       - name: Approval dialog
