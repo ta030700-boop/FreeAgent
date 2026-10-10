@@ -102,7 +102,9 @@ From the project folder:
 python -m unittest discover -s tests -v
 node extension/test-parser.js
 node extension/test-chatgpt.js
+node extension/test-popup.js
 node extension/test-worker.js
+node extension/test-approval.js
 node extension/test-loop.js
 ```
 

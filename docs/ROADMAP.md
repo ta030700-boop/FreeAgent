@@ -1,6 +1,6 @@
 # Roadmap
 
-## Available in v0.1.2
+## Available in v0.1.3
 
 - [x] General file, terminal and Python tools
 - [x] Workspace memory, task notes and Markdown skills
