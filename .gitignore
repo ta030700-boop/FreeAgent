@@ -1,0 +1,13 @@
+# Local authority, environments and generated workspace state
+.venv/
+.freeagent-config/
+.zeroagent-config/
+**/.freeagent/
+**/.zeroagent/
+__pycache__/
+*.pyc
+*.zip
+logs/
+.DS_Store
+Thumbs.db
+desktop.ini
