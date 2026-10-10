@@ -12,13 +12,13 @@
 ![Chrome + Edge](https://img.shields.io/badge/browser-Chrome%20%2B%20Edge-a78bfa)
 ![23 local tools](https://img.shields.io/badge/local_tools-23-facc15)
 
-[**Get started**](#get-started) · [**Example tasks**](docs/EXAMPLES.md) · [**Full guide**](docs/GUIDE.md) · [**Contribute**](CONTRIBUTING.md)
+[**Get started**](#get-started) · [**Use ChatGPT**](docs/CHATGPT.md) · [**Example tasks**](docs/EXAMPLES.md) · [**Full guide**](docs/GUIDE.md) · [**Contribute**](CONTRIBUTING.md)
 
 </div>
 
 FreeAgent connects a normal browser AI conversation to a small Python bridge on your computer. The AI requests tools, you approve protected actions, and results return to the same chat. **No model API key is required.** Your chosen chat service's account requirements, quotas and rules still apply.
 
-> **Early release · v0.1.2.** Eight adapters are included; live website compatibility depends on each provider's current UI. See [what has been tested](TESTING.md).
+> **Early release · v0.1.3.** Eight adapters are included; live website compatibility depends on each provider's current UI. See [what has been tested](TESTING.md).
 
 ## Why FreeAgent?
 
@@ -58,7 +58,7 @@ Open `chrome://extensions` or `edge://extensions`, enable **Developer mode**, ch
 
 **4. Pair and start**
 
-Click the extension icon, paste the pairing token printed by the bridge, and select **Pair / save connection**. Open a new conversation on a supported site, click **Start agent**, and give it a task:
+Click the extension icon, paste the pairing token printed by the bridge, and select **Pair / save connection**. Choose **ChatGPT**, **DeepSeek** or another provider in the popup and click **Open**. Open a new conversation, click **Start agent**, and give it a task:
 
 ```text
 Create a Python expense tracker in this workspace.

@@ -18,7 +18,7 @@ from local_tools import CATALOGUE, TOOLS, LocalTools, validate_arguments
 from mcp_client import MCPClient
 
 HERE = Path(__file__).resolve().parent
-VERSION = "0.1.2"
+VERSION = "0.1.3"
 
 
 class Bridge:

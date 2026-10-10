@@ -1,3 +1,11 @@
+# 0.1.3
+
+- Added a saved chat-provider selector and Open ChatGPT to the popup; all eight adapters share one bridge.
+- Added a ChatGPT guide and checks for provider selection and ChatGPT-to-local-tool parsing.
+- Updated ChatGPT's prompt for general local tasks.
+- Fixed SQLite connection handles remaining open after transactions, which caused Windows cleanup failures.
+- Added repository branding, examples, contribution forms and Linux/Windows CI.
+
 # 0.1.2
 
 - Renamed the app, bridge, prompt, runtime state folders and distribution to FreeAgent.

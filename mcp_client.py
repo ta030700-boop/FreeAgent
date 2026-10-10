@@ -49,7 +49,7 @@ class MCPClient:
             threading.Thread(target=self.reader, args=(proc,), daemon=True).start()
             threading.Thread(target=self.stderr, args=(proc,), daemon=True).start()
             response = self.request("initialize", {"protocolVersion": "2024-11-05", "capabilities": {},
-                                    "clientInfo": {"name": "freeagent", "version": "0.1.2"}}, timeout=15)
+                                    "clientInfo": {"name": "freeagent", "version": "0.1.3"}}, timeout=15)
             if response.get("error"):
                 self.stop(); raise RuntimeError(response["error"].get("message", "MCP initialization failed"))
             self.notify("notifications/initialized", {})

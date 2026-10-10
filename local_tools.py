@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import base64
+from contextlib import contextmanager
 import io
 import ipaddress
 import json
@@ -133,8 +134,14 @@ class LocalTools:
             db.execute("CREATE TABLE IF NOT EXISTS memory (key TEXT PRIMARY KEY, value TEXT NOT NULL)")
             db.execute("CREATE TABLE IF NOT EXISTS tasks (id INTEGER PRIMARY KEY, title TEXT, details TEXT, status TEXT)")
 
+    @contextmanager
     def database(self):
-        return sqlite3.connect(self.state / "state.sqlite3", timeout=10)
+        db = sqlite3.connect(self.state / "state.sqlite3", timeout=10)
+        try:
+            with db:
+                yield db
+        finally:
+            db.close()
 
     def path(self, value=".", allow_root=True):
         if not isinstance(value, str) or not value.strip():

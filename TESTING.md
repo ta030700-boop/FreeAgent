@@ -1,10 +1,11 @@
-# Validation for 0.1.2
+# Validation for 0.1.3
 
 Automated validation was run in a Linux environment with Python 3.12.14 and websockets 16.0. Node ran the browser-independent JavaScript fixtures.
 
-- 19 Python tests: workspace paths including symlinks; file backup/edit/search/trash; persisted memory/tasks; Python output/exit/timeout/cancellation; skill loading and arguments; desktop focus validation and missing dependency error; authenticated loopback WebSocket workflows, rejection of invalid credentials/website origins, approval checks, cancellation with responsive pings; stdio MCP error propagation.
+- 20 Python tests: workspace paths including symlinks; file backup/edit/search/trash; persisted memory/tasks; Python output/exit/timeout/cancellation; skill loading and arguments; desktop focus validation and missing dependency error; authenticated loopback WebSocket workflows, rejection of invalid credentials/website origins, approval checks, cancellation with responsive pings; stdio MCP error propagation.
 - 19 command-protocol tests: explicit envelopes, raw code, quote handling, inert unmarked examples, multiple commands, incomplete/malformed replies, invalid params and markers inside JSON data.
-- 8 inherited ChatGPT document-reading tests.
+- 10 ChatGPT document-reading and local-command parsing tests.
+- 4 popup tests for provider selection, ChatGPT launch, saved choice, unchanged pairing and allowed URL fallback.
 - 10 service-worker tests for handshake readiness, catalogue routing, per-tab cancellation, protected pairing, exact tool grants, workspace/pairing/port isolation, concurrent updates, persistence after worker restart and reset.
 - 6 approval-dialog tests for approve once, saving always allow, skipping remembered tools, denial, storage failure and Stop taking priority.
 - 3 actual shared-loop tests for repeated malformed replies, repeated multiple-command replies and approval denial.
