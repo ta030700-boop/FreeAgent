@@ -1,5 +1,5 @@
 // Quick Node smoke test for providers/chatgpt.js (run: node test-chatgpt.js).
-// Not shipped.
+// Included in FreeAgent's regression suite.
 //
 // Why this exists: every ChatGPT bug fixed in 1.5.1 was a READING bug, not a
 // parsing one - the parser was fine, the text handed to it was wrong. ChatGPT
@@ -123,3 +123,13 @@ const withChip = P.textWithout(
   ".zs-chip"
 );
 ok("excluded subtree is skipped", withChip.includes("real reply") && !withChip.includes("execute_luau"));
+
+// The actual ChatGPT reader feeds FreeAgent's parser, preserving command arguments.
+const parse = new Function(fs.readFileSync(__dirname + '/core/parser.js', 'utf8') + '; return ZSParse;')();
+const payload = {command:'write_file',params:{path:'hello.py',content:'print("Hello from ChatGPT")\n'}};
+const command = P.textWithout(cmBlock(['###AGENT_TOOL###',JSON.stringify(payload),'###END_AGENT_TOOL###']));
+const calls = parse.parseToolCalls(command);
+ok('ChatGPT-rendered FreeAgent command reaches the local-tool parser intact',calls.length===1 && calls[0].tool==='write_file' && calls[0].arguments.content===payload.params.content);
+const python = P.textWithout(cmBlock(['###CODE:run_python###','print("ChatGPT bridge ready")','','print(2+2)','###END_CODE###']));
+const codeCalls = parse.parseToolCalls(python);
+ok('ChatGPT-rendered Python keeps code and blank lines for execution',codeCalls.length===1 && codeCalls[0].tool==='run_python' && codeCalls[0].arguments.code==='print("ChatGPT bridge ready")\n\nprint(2+2)');
