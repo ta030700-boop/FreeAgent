@@ -1,0 +1,11 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{width:330px;margin:0;padding:18px;box-sizing:border-box;background:#121b2a;color:#eef3ff;font:13px system-ui}h1{font-size:19px;margin:0 0 12px}label{display:block;margin-top:12px}input,button{box-sizing:border-box;width:100%;margin-top:6px;padding:9px;border:1px solid #486281;border-radius:8px;background:#1e3048;color:#fff}button{cursor:pointer;background:#315d85}small{color:#b9cbe0}#servers{white-space:pre-line;font-size:12px}#status{color:#a9d9ff}#workspace{overflow-wrap:anywhere}
+</style></head><body>
+<h1>FreeAgent <small id="version"></small></h1>
+<p id="status">Checking bridge…</p><p id="workspace"></p><div id="servers"></div>
+<label>Pairing token from your bridge terminal<input id="token" type="password" autocomplete="off" placeholder="Paste token"></label>
+<label>Local bridge port<input id="port" type="number" min="1024" max="65535" value="17613"></label>
+<button id="pair">Pair / save connection</button><button id="reconnect">Reconnect</button><button id="open">Open DeepSeek</button>
+<p><small>Run start.bat on Windows or start.sh on macOS/Linux. Load an empty chat and click Start agent. Extra MCP servers and workspace folder are configured in config.json.</small></p>
+<script src="popup.js"></script></body></html>
