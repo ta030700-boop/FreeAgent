@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640"><title>FreeAgent — Your chat. Your tools. Your computer.</title>
+<rect x="0" y="0" width="1280" height="640" rx="0" fill="#0b1220"/>
+<path d="M 640 0 L 640 640" stroke="#132035" stroke-width="1"/>
+<path d="M 680 0 L 680 640" stroke="#132035" stroke-width="1"/>
+<path d="M 720 0 L 720 640" stroke="#132035" stroke-width="1"/>
+<path d="M 760 0 L 760 640" stroke="#132035" stroke-width="1"/>
+<path d="M 800 0 L 800 640" stroke="#132035" stroke-width="1"/>
+<path d="M 840 0 L 840 640" stroke="#132035" stroke-width="1"/>
+<path d="M 880 0 L 880 640" stroke="#132035" stroke-width="1"/>
+<path d="M 920 0 L 920 640" stroke="#132035" stroke-width="1"/>
+<path d="M 960 0 L 960 640" stroke="#132035" stroke-width="1"/>
+<path d="M 1000 0 L 1000 640" stroke="#132035" stroke-width="1"/>
+<path d="M 1040 0 L 1040 640" stroke="#132035" stroke-width="1"/>
+<path d="M 1080 0 L 1080 640" stroke="#132035" stroke-width="1"/>
+<path d="M 1120 0 L 1120 640" stroke="#132035" stroke-width="1"/>
+<path d="M 1160 0 L 1160 640" stroke="#132035" stroke-width="1"/>
+<path d="M 1200 0 L 1200 640" stroke="#132035" stroke-width="1"/>
+<path d="M 1240 0 L 1240 640" stroke="#132035" stroke-width="1"/>
+<path d="M 640 0 L 1280 0" stroke="#132035" stroke-width="1"/>
+<path d="M 640 40 L 1280 40" stroke="#132035" stroke-width="1"/>
+<path d="M 640 80 L 1280 80" stroke="#132035" stroke-width="1"/>
+<path d="M 640 120 L 1280 120" stroke="#132035" stroke-width="1"/>
+<path d="M 640 160 L 1280 160" stroke="#132035" stroke-width="1"/>
+<path d="M 640 200 L 1280 200" stroke="#132035" stroke-width="1"/>
+<path d="M 640 240 L 1280 240" stroke="#132035" stroke-width="1"/>
+<path d="M 640 280 L 1280 280" stroke="#132035" stroke-width="1"/>
+<path d="M 640 320 L 1280 320" stroke="#132035" stroke-width="1"/>
+<path d="M 640 360 L 1280 360" stroke="#132035" stroke-width="1"/>
+<path d="M 640 400 L 1280 400" stroke="#132035" stroke-width="1"/>
+<path d="M 640 440 L 1280 440" stroke="#132035" stroke-width="1"/>
+<path d="M 640 480 L 1280 480" stroke="#132035" stroke-width="1"/>
+<path d="M 640 520 L 1280 520" stroke="#132035" stroke-width="1"/>
+<path d="M 640 560 L 1280 560" stroke="#132035" stroke-width="1"/>
+<path d="M 640 600 L 1280 600" stroke="#132035" stroke-width="1"/>
+<rect x="48" y="48" width="1184" height="544" rx="26" fill="#0d1627" stroke="#213147" stroke-width="2"/>
+<rect x="82" y="82" width="66" height="66" rx="16" fill="#34d399"/>
+<path d="M 104 100 L 104 132" stroke="#0b1220" stroke-width="7"/>
+<path d="M 102 100 L 131 100" stroke="#0b1220" stroke-width="7"/>
+<path d="M 102 115 L 125 115" stroke="#0b1220" stroke-width="7"/>
+<text x="168" y="114" font-family="DejaVu Sans, monospace" font-size="16" font-weight="700" fill="#90a4bf">OPEN SOURCE  /  LOCAL AGENT</text>
+<text x="80" y="270" font-family="DejaVu Sans, sans-serif" font-size="78" font-weight="700" fill="#f8fafc">FreeAgent</text>
+<text x="84" y="339" font-family="DejaVu Sans, sans-serif" font-size="31" font-weight="400" fill="#cbd5e1">Your chat. Your tools.</text>
+<text x="84" y="386" font-family="DejaVu Sans, sans-serif" font-size="31" font-weight="700" fill="#34d399">Your computer.</text>
+<text x="84" y="451" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="400" fill="#90a4bf">Turn a conversation into action.</text>
+<rect x="84" y="495" width="212" height="47" rx="12" fill="#163b35"/>
+<text x="101" y="523" font-family="DejaVu Sans, monospace" font-size="14" font-weight="700" fill="#6ee7b7">NO MODEL API KEY</text>
+<text x="316" y="523" font-family="DejaVu Sans, monospace" font-size="14" font-weight="400" fill="#90a4bf">Python + Chrome / Edge</text>
+<rect x="750" y="176" width="418" height="90" rx="17" fill="#152239" stroke="#29405b" stroke-width="2"/>
+<rect x="750" y="287" width="418" height="90" rx="17" fill="#152239" stroke="#29405b" stroke-width="2"/>
+<rect x="750" y="398" width="418" height="90" rx="17" fill="#152239" stroke="#29405b" stroke-width="2"/>
+<text x="777" y="223" font-family="DejaVu Sans, monospace" font-size="22" font-weight="700" fill="#34d399">01</text>
+<text x="832" y="215" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Build a project</text>
+<text x="832" y="242" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#90a4bf">Files + terminal + Python</text>
+<text x="777" y="334" font-family="DejaVu Sans, monospace" font-size="22" font-weight="700" fill="#34d399">02</text>
+<text x="832" y="326" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Choose what runs</text>
+<text x="832" y="353" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#90a4bf">Approve once or always allow</text>
+<text x="777" y="445" font-family="DejaVu Sans, monospace" font-size="22" font-weight="700" fill="#34d399">03</text>
+<text x="832" y="437" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Keep your context</text>
+<text x="832" y="464" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#90a4bf">Memory + tasks + skills</text>
+<text x="751" y="541" font-family="DejaVu Sans, monospace" font-size="14" font-weight="700" fill="#facc15">23 TOOLS   /   8 CHAT ADAPTERS</text>
+</svg>
