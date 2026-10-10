@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible installation, adapter or tool problem.
+body:
+  - type: markdown
+    attributes:
+      value: Remove tokens, personal paths and private content from logs and screenshots.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, Python version and FreeAgent version.
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Chat provider or MCP server
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the exact action and expected versus actual result.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized error output or screenshot
+      description: Remove pairing tokens and confidential content first.
